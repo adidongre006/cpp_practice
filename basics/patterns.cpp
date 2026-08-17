@@ -310,7 +310,7 @@ int main(){
     // TrianglePatternCount();
     // SquareString();
     //  SquareStringTricky();
-    TriangleStrig();
+    // TriangleStrig();
     
 
 
