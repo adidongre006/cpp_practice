@@ -295,10 +295,76 @@ void TriangleStrig(){
 // A B C 
 // A B C D 
 // A B C D E 
-//-------------------------
+//-----------------------------------------------
 
 }
+void TriangleReverse(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = 1;
+    
+    while(row<=n){
+        int space = n- row;
+        int col = 1;
+        //space print karlo
+        while(space){
+            cout<<" ";
+            space--;
+        }
+        // star print karlo
+       
+        while(col<=row){
+          
+            cout<<"*";
+            col++;
+          
 
+        }
+        cout<< endl;
+        row ++;
+
+    }
+   
+
+///      
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+
+// --------------------------------------------
+
+
+}
+//-------------------------------------------
+void TriangleReverse1(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = 1;
+    
+    while(row<=n){
+        
+     
+    }
+   
+
+///      
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+
+
+
+
+}
+//-------------------------------------------
 
 
 int main(){
@@ -311,6 +377,8 @@ int main(){
     // SquareString();
     //  SquareStringTricky();
     // TriangleStrig();
+    // TriangleReverse();
+    TriangleReverse1();
     
 
 
