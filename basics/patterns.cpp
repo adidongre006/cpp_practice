@@ -140,9 +140,164 @@ int TrianglePatternNum(){
 
 }
 // ------------------------------------------------------------------
-   
+  // --------------------------------------------------------------
+
+int TrianglePatternCount(){
+    int n;
+    cout<<"enter the value of n :"<<endl;
+    cin>>n;
+    int row=1;
+    while(row <= n){
+        int col = 1;
+        while(col<=row){
+            cout<<row-col+1;
+            col ++;
 
 
+        }
+        cout<<endl;
+        row++;
+
+    }
+    
+ return 0;
+// 1
+// 21
+// 321
+// 4321
+// 54321
+
+
+    }
+     // ------------------------------------------------------------------ 
+  // --------------------------------------------------------------
+
+void SquareString(){
+    int n;
+    cout<<"enter the value of n :"<<endl;
+    cin>>n;
+    int row=1;
+    // char ch = "A"; " ": create an const char
+    // ' ' : creates the normal char
+    char start = 'A';
+    while(row <= n){
+        int col = 1;
+        while(col<=n){
+            // char ch = 'A' + col -1 ;
+            cout<<start << " ";
+            col ++;
+            start++;
+
+
+        }
+        cout<<endl;
+        row++;
+
+    }
+    
+//  return 0;
+     // cout: 'A' + row -1;
+
+// A A A A A 
+// B B B B B 
+// C C C C C 
+// D D D D D 
+// E E E E E 
+  //---------------
+    // cout : 'A' + col -1;
+// A B C D E 
+// A B C D E 
+// A B C D E 
+// A B C D E 
+// A B C D E 
+ // -------- ---------: start= 'A'
+//   cout<< start;
+//   start = start +1;
+// A B C D E 
+// F G H I J 
+// K L M N O 
+// P Q R S T 
+// U V W X Y 
+//------------------------
+
+
+    }
+     // ------------------------------------------------------------------ 
+
+ // --------------------------------------------------------------
+
+void SquareStringTricky(){
+    int n;
+    cout<<"enter the value of n :"<<endl;
+    cin>>n;
+    int row=1;
+     // row + col -1 --->> A;
+    //  row + col - 1 + A = 1+A;
+
+    // row + col - 1 + A -1 = 1+A-1
+    // A + row +col -2 = A;
+
+    char start = 'A';
+    while(row <= n){
+        int col = 1;
+        while(col<=n){
+            
+           char ch = 'A' + row +col - 2 ;
+           cout<< ch << " ";
+            col ++;
+            
+
+
+        }
+        cout<<endl;
+        row++;
+
+    }
+// A B C D E 
+// B C D E F 
+// C D E F G 
+// D E F G H 
+// E F G H I 
+
+
+}
+void TriangleStrig(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = 1;
+    while(row<=n){
+        int col = 1;
+        char value = 'A';
+        while(col<=row){
+            // char ch = 'A'+ row - 1;
+            cout<<value << " ";
+            col++;
+            value++;
+
+        }
+        cout<< endl;
+        row ++;
+
+    }
+    // cout << char ch = A + row -1;
+
+// A 
+// B B 
+// C C C 
+// D D D D 
+// E E E E E 
+
+//-------------------------
+// cout << value = A ; val++;
+// A 
+// A B 
+// A B C 
+// A B C D 
+// A B C D E 
+//-------------------------
+
+}
 
 
 
@@ -152,6 +307,11 @@ int main(){
     // countSquare();
     // TrianglePattern();
     // TrianglePatternNum();
+    // TrianglePatternCount();
+    // SquareString();
+    //  SquareStringTricky();
+    TriangleStrig();
+    
 
 
 return 0;
