@@ -316,7 +316,7 @@ void TriangleReverse(){
        
         while(col<=row){
           
-            cout<<"*";
+            cout<<row;// "*"
             col++;
           
 
@@ -327,13 +327,21 @@ void TriangleReverse(){
     }
    
 
-///      
+///      cout: "*"
 //     *
 //    **
 //   ***
 //  ****
 // *****
+///-------------------
+// cout:row
 
+//     1
+//    22
+//   333
+//  4444
+// 55555
+// 
 
 // --------------------------------------------
 
@@ -344,21 +352,188 @@ void TriangleReverse1(){
     int n ;
     cout<<"Enter the value of n"<< endl;
     cin >> n;
-    int row = 1;
+    int row = n;
     
-    while(row<=n){
-        
+    while(row>=1){
+        int col = 1;
+        while(col<=row){
+            cout<<"*"<<" ";
+            col++;
+
+        }
+        cout<<endl;
+        row--;
+
+
      
     }
    
 
-///      
+// * * * * * 
+// * * * * 
+// * * * 
+// * * 
+// * 
+
+
+
+
+
+}
+//-------------------------------------------
+void TriangleReverse2(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = 1;
+    
+    while(row<=n){
+        // space print karo
+        int space = n-row;
+        while(space){
+            cout<<" ";
+            space--;
+
+        }
+        int col = 1;
+        while(col<=row){
+            cout<<"*";
+            col++;
+        }
+        cout<<endl;
+        row++;
+
+
+     
+    }
+   
+
 //     *
 //    **
 //   ***
 //  ****
 // *****
 
+
+
+
+}
+//-------------------------------------------
+void TriangleReverse3(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = 1;
+    
+    while(row<=n){
+        // space print karo
+        int space = row - 1;
+        while(space){
+            cout<<" ";
+            space--;
+
+        }
+        int col = n - 1;
+        while(col>=row){
+            cout<<row;// // "*"
+            col--;
+        }
+        cout<<endl;
+        row++;
+
+
+     
+    }
+//    cout : star *
+
+// ****
+//  ***
+//   **
+//    *
+// ----------------
+// cout : row
+// 1111
+//  222
+//   33
+//    4
+
+
+
+}
+//-------------------------------------------
+//-------------------------------------------
+void TriangleTricky1(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = 1;
+    
+
+   while(row<=n){
+     // priint space (1st triangle)
+    int space = n-row;
+    while(space){
+        cout<<" ";
+        space--;
+
+    }
+    /// print 2nd triangle 
+    int col = 1;
+
+    while(col<=row){
+        cout<<col;
+        col++;
+    }
+    // 3rd triangle
+    int start= row-1;
+    while(start){
+        cout<<start;
+        start--;
+
+    }
+    cout<<endl;
+   row++;
+   }
+   
+   ///
+//     1
+//    121
+//   12321
+//  1234321
+// 123454321
+
+
+
+
+
+
+}
+//-------------------------------------------
+void TriangleTricky1(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row = n;
+    
+
+   while(row >=1 ){
+    // 1st triangle
+    int col=1;
+
+    while(col<=row){
+        cout<<col;
+        col++;
+
+
+    }
+    // 2nd triangle
+    int second= n-1;
+    
+    cout<<endl;
+    row--;
+
+
+   }
 
 
 
@@ -378,7 +553,11 @@ int main(){
     //  SquareStringTricky();
     // TriangleStrig();
     // TriangleReverse();
-    TriangleReverse1();
+    // TriangleReverse1();
+    // TriangleReverse2();
+    // TriangleReverse3();
+    // TriangleTricky1();
+    TriangleTricky2();
     
 
 
