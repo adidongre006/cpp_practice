@@ -7,6 +7,7 @@
       - triangle
       - triangle num 
       - square 
+      - pyramid
       - etc ...
 
 ---
