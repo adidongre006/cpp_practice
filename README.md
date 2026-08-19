@@ -9,6 +9,8 @@
       - square 
       - pyramid
       - etc ...
-
+   - Bit Manipulations
+      - xor
+      - 
 ---
- 2. 
+ 1. 
