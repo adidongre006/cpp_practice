@@ -553,6 +553,41 @@ void TriangleTricky2(){
 
    
 }
+void TrianglePyramid(){
+    int n ;
+    cout<<"Enter the value of n"<< endl;
+    cin >> n;
+    int row =1;
+    while(row<=n){
+        //print spaces
+        int space= n-row;
+        while(space){
+            cout<<" ";
+            space= space -1;
+
+        }
+        // print stars
+
+       int col = 2*row-1;
+       while(col){
+        cout<<"*";
+        col= col-1;
+       }
+        
+    //    }
+       cout<<endl;
+       row = row + 1;
+
+    }
+    
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+}
 
 
 
@@ -574,7 +609,8 @@ int main(){
     // TriangleReverse2();
     // TriangleReverse3();
     // TriangleTricky1();
-    TriangleTricky2();
+    // TriangleTricky2();
+    // TrianglePyramid();
     
 
 
