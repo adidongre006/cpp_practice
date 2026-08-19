@@ -509,36 +509,53 @@ void TriangleTricky1(){
 
 }
 //-------------------------------------------
-void TriangleTricky1(){
+void TriangleTricky2(){
     int n ;
     cout<<"Enter the value of n"<< endl;
     cin >> n;
     int row = n;
-    
+    int idx = 1;
 
-   while(row >=1 ){
-    // 1st triangle
-    int col=1;
-
+   while(row>=1){
+    // print 1st triangle
+    int col = 1;
     while(col<=row){
-        cout<<col;
+        cout<<col<<" ";
         col++;
-
 
     }
     // 2nd triangle
-    int second= n-1;
-    
+    int start = 2*idx - 2;
+
+    while(start){
+        cout<<"*"<<" ";
+        start--;
+
+    }
+    // 3rd triangle
+    int col2 = row ;
+    while(col2>=1){
+        cout<<col2<<" ";
+        col2--;
+    }
+
     cout<<endl;
-    row--;
+    row --;
+    idx++;
 
+   } 
 
-   }
+// 1 2 3 4 5 5 4 3 2 1 
+// 1 2 3 4 * * 4 3 2 1 
+// 1 2 3 * * * * 3 2 1 
+// 1 2 * * * * * * 2 1 
+// 1 * * * * * * * * 1    
 
-
-
-
+   
 }
+
+
+
 //-------------------------------------------
 
 
