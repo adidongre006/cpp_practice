@@ -9,8 +9,22 @@
       - square 
       - pyramid
       - etc ...
+   
    - Bit Manipulations
-      - xor
+      - xor, and , or , not 
+      - shift
+      - increment, decrement
+      - some basic programs 
+      - etc
+  
+   - Decimal to binary
+      - xor, and , or , not 
+      - shift
+      - increment, decrement
+      - some basic programs 
+      - etc
+  
+   
       - 
 ---
  1. 
