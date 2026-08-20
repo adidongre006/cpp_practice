@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstdint>
 using namespace std;
 
 
@@ -80,15 +81,76 @@ int fibonacci(){
 }
 
 void PrimeNum(){
-    
+    int n;
+    cout<<"Enter the value of n :"<<endl;
+    cin>>n;
+    bool isPrime = true;
+    for(int i = 2;i<n-1;i++){
+        if(n%i==0){
+            isPrime = false;
+            break;
+
+        }
+    }
+    if(isPrime){
+        cout<<"The number "<< n <<" is Prime Number"<<endl;
+
+    }else{
+        cout<<"The Number "<< n << " is not an prime Number"<<endl;
+    }
 }
 
+void numberExtract(){
+    int n;
+    cout<<"Enter the value of n:"<<endl;
+    cin>>n;
+    int prod = 1;
+    int sum  =0;
+    while(n!=0){
+        int digit=n%10;
+        prod = prod * digit;
+        sum = sum + digit;
+        n= n/10;
+
+    }
+
+    cout<<"Product of the digits :"<< prod << endl;
+    cout<<"Sum of the digits :"<< sum << endl;
+   
+}
+
+
+/* 
+Imp Questions
+*/
+// No of one ( 1 ): bit :
+
+void numberOfOneBit(){
+
+    // brian kernighan algo
+   int n ;
+   cout<<"Enter the value of n  : "<<endl;
+   cin>>n;
+   int count = 0;
+
+   while(n){
+    n &=(n- 1);
+    count++;
+   }
+   cout<<"The number of one bits are : "<<count<<endl;
+}
 
 
 
 int main(){
 // basicOperation();
 // fibonacci();
+// PrimeNum();
+
+// numberExtract();
+// numberOfOneBit();
+
+
 
 return 0;
 }
