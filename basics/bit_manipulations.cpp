@@ -131,7 +131,10 @@ void numberOfOneBit(){
    int n ;
    cout<<"Enter the value of n  : "<<endl;
    cin>>n;
+   
+   
    int count = 0;
+   
 
    while(n){
     n &=(n- 1);
@@ -139,8 +142,51 @@ void numberOfOneBit(){
    }
    cout<<"The number of one bits are : "<<count<<endl;
 }
+// -----------------------------------------
+
+int reverseInteger(){
+    int n;
+    cout<<"Enter the value of n: "<<endl;
+    cin>>n;
+int x = n;
+    // logic 
+    int rev = 0;
+    while (n){
+int digit=n%10;
+rev = rev*10+ digit;
+n= n/10;
+       
+    }
+    cout << "The reverse of : "<< x <<" is : "<<rev<< endl;
+    return 0;
+    
+}
 
 
+//----------------------------------------------
+
+void ComplementNumber(){
+    int n ;
+    cout<<"Enter the value of n :"<<endl;
+    cin>>n;
+    int mask = 0;
+    int temp = n;
+    while(temp){
+        mask = (mask << 1)|1;
+        temp = temp>>1; 
+    }
+    int ans = mask ^ n;
+    cout<< "The complement of : "<< n << " is : "<<ans<<endl;
+
+}
+//-------------------------------------
+
+// complement of base 10 integer
+void complementBaseTen(){
+    
+}
+
+// ---------------------------------------------------------
 
 int main(){
 // basicOperation();
@@ -148,7 +194,11 @@ int main(){
 // PrimeNum();
 
 // numberExtract();
-// numberOfOneBit();
+
+// reverseInteger();
+
+// ComplementNumber();
+
 
 
 
