@@ -15,16 +15,17 @@
       - shift
       - increment, decrement
       - some basic programs 
-      - etc
+         - Prime Number
+         - Number of one bit(in an integer)
+         - reverse an integer
+         - complement of number 
+         - Complement of Base 10 Integer
   
    - Decimal to binary
-      - xor, and , or , not 
-      - shift
-      - increment, decrement
-      - some basic programs 
-      - etc
+      - 
+      
   
    
-      - 
+    
 ---
- 1. 
+ 
