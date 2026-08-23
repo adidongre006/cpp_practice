@@ -19,9 +19,10 @@
          - Number of one bit(in an integer)
          - reverse an integer
          - complement of number 
-         - Complement of Base 10 Integer
+         
   
-   - Decimal to binary
+   - Some Imp Questions 
+      - complement of base 10 integer 
       - 
       
   
