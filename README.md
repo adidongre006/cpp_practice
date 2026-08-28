@@ -25,6 +25,7 @@
       - complement of base 10 integer 
       - Decimal to binary
       - Binary to decimal
+      - 
   
    
     
