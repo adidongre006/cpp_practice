@@ -15,7 +15,8 @@ void decimalToBinary(){
 
     while(n!=0){
         int bit = n&1;
-        ans = (bit * pow(10,i) )+ ans;
+        ans = (bit * pow(10,i) )+ ans;  
+        // ans = ans *10 + bit; wrong method to add the bits <--
         n = n>>1;
      
         i++;
@@ -48,8 +49,8 @@ ans = ans +  pow(2,i);
 }
 
 int main(){
-// decimalToBinary();
-binaryToDecimal();
+decimalToBinary();
+// binaryToDecimal();
 
 return 0;
 }
