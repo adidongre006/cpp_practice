@@ -48,6 +48,7 @@ ans = ans +  pow(2,i);
    
 }
 
+
 int main(){
 decimalToBinary();
 // binaryToDecimal();

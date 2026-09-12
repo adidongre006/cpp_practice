@@ -1,5 +1,6 @@
 #include<iostream>
 #include <cstdint>
+#include <cmath>
 using namespace std;
 
 
@@ -165,12 +166,46 @@ n= n/10;
 
 //----------------------------------------------
 
+
+
+// bool powerOFtwo(){
+//     int n;
+//     cout<<"Enter the value of n:"<<endl;
+//     cin >> n;
+//     int ans = 1
+//     for(int i = 0;i<=30;i++){
+//         int ans = pow(2,i);
+//         if(ans == n){
+//             return true;
+
+//         }
+
+//     }
+//     return false;
+// }
+//----------------------------------------------
+
+
+
+bool powerOFtwov2(int n){
+//    if( n>0 && (n&(n-1)== 0) ){
+//     return true;
+//    }
+//     return false;
+
+return {n>0 && (n&(n-1)== 0)};+
+};
+//----------------------------------------------
+
 void ComplementNumber(){
     int n ;
     cout<<"Enter the value of n :"<<endl;
     cin>>n;
     int mask = 0;
     int temp = n;
+
+    // if(n==0){return 1;}    very imp
+
     while(temp){
         mask = (mask << 1)|1;
         temp = temp>>1; 
@@ -189,6 +224,10 @@ void complementBaseTen(){
 // ---------------------------------------------------------
 
 int main(){
+
+     int n;
+    cout<<"Enter the value of n:"<<endl;
+    cin >> n;
 // basicOperation();
 // fibonacci();
 // PrimeNum();
@@ -199,8 +238,8 @@ int main(){
 
 // ComplementNumber();
 
+// powerOFtwo();
 
-
-
+powerOFtwov2( n);
 return 0;
 }
