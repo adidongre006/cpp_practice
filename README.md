@@ -27,7 +27,9 @@
       - Binary to decimal
       - 
   
-   
+   - Standard Template library:
+     - vectors 
+     - 
     
 ---
  
