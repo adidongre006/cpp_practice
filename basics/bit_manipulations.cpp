@@ -187,14 +187,30 @@ n= n/10;
 
 
 
-bool powerOFtwov2(int n){
-//    if( n>0 && (n&(n-1)== 0) ){
-//     return true;
-//    }
-//     return false;
+bool powerOFtwo(int n ){
+    
+return n> 0 && (n&(n-1))== 0;   
+}
 
-return {n>0 && (n&(n-1)== 0)};+
-};
+
+int test (){
+
+    int testcase [] = {0,1,4,15,-8};
+    for (int n : testcase){
+        cout<<n<<(powerOFtwo(n) ? "True" : " False")<< endl;
+
+    }
+
+
+// 0 False
+// 1True
+// 4True
+// 15 False
+// -8 False
+    
+
+return 0;
+}
 //----------------------------------------------
 
 void ComplementNumber(){

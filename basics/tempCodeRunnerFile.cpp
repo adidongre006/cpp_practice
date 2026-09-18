@@ -1,15 +1,25 @@
-bool powerOFtwo(){
-//     int n;
-//     cout<<"Enter the value of n:"<<endl;
-//     cin >> n;
-//     int ans = 1
-//     for(int i = 0;i<=30;i++){
-//         int ans = pow(2,i);
-//         if(ans == n){
-//             return true;
+#include<iostream>
+using namespace std;
 
-//         }
 
-//     }
-//     return false;
-// }
+
+
+
+bool powerOFtwo(int n ){
+    
+return n> 0 && (n&(n-1))== 0;   
+}
+
+
+int main(){
+
+    int testcase [] = {0,1,4,15,-8};
+    for (int n : testcase){
+        cout<<n<<(powerOFtwo(n) ? " True" : " False")<< endl;
+
+    }
+    
+
+return 0;
+}
+
