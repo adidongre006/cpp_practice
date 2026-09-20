@@ -28,7 +28,17 @@
       - 
   
    - Standard Template library:
-     - vectors 
+     - vectors // dynamic arrays 
+     - arrays 
+     - stack(lifo)
+     - list // linked list 
+     - set //unique sorted 
+     - map // key value 
+     - queue (fifo)
+     - priority queue // heap 
+     - deque // insert & remove values  
+
+
      - 
     
 ---
