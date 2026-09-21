@@ -36,9 +36,7 @@
      - map // key value 
      - queue (fifo)
      - priority queue // heap 
-     - deque // insert & remove values  
-
-
+     - deque (double ended queue ) // insert & remove values  
      - 
     
 ---
