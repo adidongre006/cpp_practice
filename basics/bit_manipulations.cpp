@@ -140,6 +140,8 @@ void numberOfOneBit(){
    while(n){
     n &=(n- 1);
     count++;
+
+    
    }
    cout<<"The number of one bits are : "<<count<<endl;
 }
